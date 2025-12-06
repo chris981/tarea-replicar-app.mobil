@@ -1,0 +1,56 @@
+.page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #111827 0, #02010a 55%, #000000 100%);
+}
+
+.header,
+.main {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.header__logo {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.main {
+  padding: 1.6rem;
+}
+
+.intro {
+  margin-top: 2.4rem; 
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+
+.intro__image {
+  margin-top: 2.4rem;
+}
+.intro__image-placeholder {
+  width: 100%;
+  border-radius: 2rem;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(180deg, #111827 0%, #0b0f1a 100%);
+  border: 1px solid #1a1f2e;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #9ca3af;
+}

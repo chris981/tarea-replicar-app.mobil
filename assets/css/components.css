@@ -1,0 +1,170 @@
+
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f9fafb;
+}
+
+
+
+.header__name {
+  font-size: 1.2rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.header__menu-button {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 999px;
+  border: 1px solid #1f2933;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.header__menu-line {
+  height: 2px;
+  border-radius: 999px;
+  background-color: #f9fafb;
+}
+
+.header__logo {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.intro__badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid #1f2933;
+  background-color: rgba(15, 23, 42, 0.85);
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin-bottom: 0.8rem; 
+}
+
+.intro__badge-arrow {
+  font-size: 1.2rem;
+}
+
+.intro__title {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 800;
+  max-width: 32rem;
+}
+
+.intro__title--muted {
+  color: #9ca3af;
+}
+
+.intro__text {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #9ca3af;
+  max-width: 32rem;
+}
+ .intro__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start; 
+}
+.intro__image {
+  margin-top: 2.4rem;
+  width: 100%;
+  overflow: hidden; 
+  border-radius: 1.4rem;
+}
+
+
+.intro__image-real {
+  width: 100%;
+  height: 180px;            
+  object-fit: cover;
+  object-position: top center; 
+
+  display: block;
+
+ 
+  filter: brightness(0.45);
+
+  
+  border-bottom-left-radius: 1.6rem;
+  border-bottom-right-radius: 1.6rem;
+}
+
+
+
+/* BOTONES */
+
+.button {
+  width: 100%;
+  max-width: 24rem;
+  margin: 0;
+  padding: 1.3rem 2rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.button--primary {
+  background-color: #ffffff;
+  color: #111827;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.button--secondary {
+  background-color: transparent;
+  border: 1px solid #1f2933;
+  color: #f9fafb;
+  padding: 1rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 999px;
+}
+
+
+.button__icon {
+  font-size: 1.4rem;
+}
+
+
+.button--secondary .button__icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background-color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
