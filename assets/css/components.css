@@ -1,10 +1,8 @@
 
-
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #f9fafb;
 }
-
 
 
 .header__name {
@@ -34,19 +32,15 @@ body {
   background-color: #f9fafb;
 }
 
+
 .header__logo {
   width: 3.2rem;
   height: 3.2rem;
   border-radius: 999px;
-  overflow: hidden;
-}
-
-.header__logo img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
 }
+
 
 
 
@@ -61,7 +55,7 @@ body {
   background-color: rgba(15, 23, 42, 0.85);
   font-size: 1.1rem;
   color: #9ca3af;
-  margin-bottom: 0.8rem; 
+  margin-bottom: 0.8rem;
 }
 
 .intro__badge-arrow {
@@ -85,39 +79,33 @@ body {
   color: #9ca3af;
   max-width: 32rem;
 }
- .intro__actions {
+
+.intro__actions {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
+
 .intro__image {
   margin-top: 2.4rem;
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
   border-radius: 1.4rem;
 }
 
-
 .intro__image-real {
   width: 100%;
-  height: 180px;            
+  height: 180px;
   object-fit: cover;
-  object-position: top center; 
-
+  object-position: top center;
   display: block;
-
- 
   filter: brightness(0.45);
-
-  
   border-bottom-left-radius: 1.6rem;
   border-bottom-right-radius: 1.6rem;
 }
 
 
-
-/* BOTONES */
 
 .button {
   width: 100%;
@@ -152,11 +140,9 @@ body {
   border-radius: 999px;
 }
 
-
 .button__icon {
   font-size: 1.4rem;
 }
-
 
 .button--secondary .button__icon {
   width: 2rem;
@@ -167,4 +153,121 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
+}
+
+
+.button:focus {
+  outline: 3px solid rgba(255,255,255,0.08);
+  outline-offset: 2px;
+}
+
+
+
+.services {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.services__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f9fafb;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.service-card {
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #1f2933;
+}
+
+.service-card__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.service-card__text {
+  font-size: 1.3rem;
+  color: #9ca3af;
+  line-height: 1.6rem;
+}
+
+
+
+.benefits {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.benefits__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f9fafb;
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.benefit-item {
+  font-size: 1.3rem;
+  color: #9ca3af;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.benefit-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #f9fafb;
+}
+
+
+@media (min-width: 768px) {
+  .main {
+    padding: 2.4rem;
+    max-width: 880px;
+  }
+
+
+  .intro__title {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+
+  .intro__actions {
+    flex-direction: row;
+    gap: 1.6rem;
+  }
+
+  .intro__image-real {
+    height: 260px;
+  }
+
+  .services__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+  }
+
+  .service-card {
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

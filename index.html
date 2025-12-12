@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/layout.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/utilities.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Acme</title>
+
+  
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/utilities.css" />
 </head>
 <body class="page">
 
-  <!-- HEADER -->
+  
   <header class="header">
     <div class="header__brand">
-      <img src="img/logo.svg" alt="Acme logo" class="header__logo">
+      
+      <img src="img/logo.svg" alt="Acme logo" class="header__logo" />
       <span class="header__name">ACME</span>
     </div>
 
-    <button class="header__menu-button" aria-label="Open menu">
+    
+    <button
+      class="header__menu-button"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
       <span class="header__menu-line"></span>
       <span class="header__menu-line"></span>
     </button>
   </header>
 
-  <!-- MAIN -->
+  
   <main class="main">
+  
     <section class="intro">
-
-      <button class="intro__badge">
+      <button class="intro__badge" type="button" aria-label="New onboarding">
         <span class="intro__badge-text">New onboarding experience</span>
         <span class="intro__badge-arrow">→</span>
       </button>
@@ -44,18 +52,60 @@
       </p>
 
       <div class="intro__actions">
-        <button class="button button--primary">Get started</button>
-        <button class="button button--secondary">
-  See our plans
-  <span class="button__icon">→</span>
-</button>
+        <button class="button button--primary" type="button">Get started</button>
 
+        <button class="button button--secondary" type="button">
+          See our plans
+          <span class="button__icon" aria-hidden="true">→</span>
+        </button>
       </div>
 
-     <div class="intro__image">
-  <img src="img/app_preview.png" alt="App preview" class="intro__image-real">
-</div>
+      <div class="intro__image" aria-hidden="true">
+        <img
+          src="img/app_preview.png"
+          alt="Vista previa de la app Acme"
+          class="intro__image-real"
+        />
+      </div>
+    </section>
 
+   
+    <section class="services" aria-labelledby="services-title">
+      <h2 id="services-title" class="services__title">Our Services</h2>
+
+      <div class="services__list">
+        <article class="service-card" aria-labelledby="svc-payroll">
+          <h3 id="svc-payroll" class="service-card__title">Global Payroll</h3>
+          <p class="service-card__text">
+            Automate payments for international teams with accurate tax compliance.
+          </p>
+        </article>
+
+        <article class="service-card" aria-labelledby="svc-contractor">
+          <h3 id="svc-contractor" class="service-card__title">Contractor Management</h3>
+          <p class="service-card__text">
+            Manage freelancers and contractors with simple, centralized workflows.
+          </p>
+        </article>
+
+        <article class="service-card" aria-labelledby="svc-hr">
+          <h3 id="svc-hr" class="service-card__title">HR Platform</h3>
+          <p class="service-card__text">
+            Onboarding, documentation, PTO tracking and everything HR in one place.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    
+    <section class="benefits" aria-labelledby="benefits-title">
+      <h2 id="benefits-title" class="benefits__title">Why Acme?</h2>
+
+      <ul class="benefits__list">
+        <li class="benefit-item">Fast onboarding for global teams</li>
+        <li class="benefit-item">Secure infrastructure and compliance</li>
+        <li class="benefit-item">24/7 support for HR and payroll issues</li>
+      </ul>
     </section>
   </main>
 
