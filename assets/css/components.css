@@ -271,3 +271,80 @@ body {
     justify-content: center;
   }
 }
+.contact {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.contact__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f9fafb;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact__label {
+  font-size: 1.2rem;
+  color: #9ca3af;
+}
+
+.contact__input,
+.contact__textarea {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid #1f2933;
+  background-color: rgba(15, 23, 42, 0.85);
+  color: #f9fafb;
+  font-size: 1.3rem;
+}
+
+.contact__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.footer {
+  margin-top: 4rem;
+  padding: 2.4rem 1.6rem;
+  border-top: 1px solid #1f2933;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer__brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #9ca3af;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #f9fafb;
+  font-size: 1.2rem;
+}
+
+.footer__copy {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
